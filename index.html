@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ='style.css'>
+    <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+</head>
+<body>
+  <div class="preloader" style="background-color: black;">
+    <img src="Assets/preloader.gif" class="pregif">
+</div>
+    
+   
+ 
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">Pratham Modi</a>
+        <div class="prt_logo_wrapper">
+          <a><img src="Assets/logo.png" alt="Logo" id="prt_close_tab"></a>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="#home" class="nav-link"
+                ><i class="fa-solid fa-house nav-icon"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link"
+                ><i class="fa-solid fa-user nav-icon"></i> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link"
+                ><i class="fa-solid fa-file nav-icon"></i> Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link"
+                ><i class="fa-solid fa-briefcase nav-icon"></i> Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link"
+                ><i class="fa-solid fa-image nav-icon"></i> Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"
+                ><i class="fa-solid fa-message nav-icon"></i> Contact</a
+              >
+            </li>
+          </ul>
+          <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+        </div>
+
+        <div class="nav-btns">
+          <!-- theme btn  -->
+          <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home section" id="home" style="margin-top: -150px;">
+        <div class="home-container container grid">
+          <div class="home-content grid">
+            <div class="home-social">
+              <a
+                href="https://www.linkedin.com/in/pratham-modi-670138250/"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/pratham._.modi_/"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/pratham0039"
+                target="_blank"
+                class="home-social-icon"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+            <div class="home-img" id = "aSide">
+              <img src="Assets/1.Idea.png" alt="" />
+              
+              
+            </div>
+
+            <div class="home-data">
+              <h1 class="home-title">Hi, I am Pratham Modi</h1>
+              <h3 class="home-subtitle">Data Scientist || Web Developer || Graphic Designer</h3>
+              <p class="home-description">
+                Passionate developer, problem solver with a unique thinking.
+              </p>
+              <a href="#contact" class="button button-flex">
+                Contact Me <i class="fa-regular fa-envelope button-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home-scroll">
+            <a href="#about" class="home-scroll-button button-flex">
+              <!-- <i class="fa-solid fa-computer-mouse home-scroll-mouse"></i> -->
+              <img class="home-scroll-mouse" src="Assets/mouse.svg" alt="" />
+              <span class="home-scroll-name">Scroll down</span>
+              <i class="fa-solid fa-angles-down home-scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-subtitle">My Introduction</span>
+
+        <div class="about-container container grid">
+          <div class="home-img" id = "aSide2">
+            <img src="Assets/Object.png" alt="" />
+          
+        </div>
+          <div class="about-data">
+            <p class="about-description">
+              I'm a versatile data scientist, developer, and graphic designer with a unique perspective. A quick learner and tenacious problem solver, I seamlessly blend skills for efficient solutions. Passionate and dedicated, I thrive on pushing creative boundaries to deliver impactful results in the dynamic intersection of data, development, and design.
+            </p>
+
+            <div class="about-info">
+              <div>
+                <span class="about-info-title">02+</span>
+                <span class="about-info-name"
+                  >Years <br />
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="about-info-title">10+</span>
+                <span class="about-info-name"
+                  >Completed <br />
+                  project</span
+                >
+              </div>
+              <div>
+                <span class="about-info-title">03</span>
+                <span class="about-info-name"
+                  >Intenships <br />
+                  Completed</span
+                >
+              </div>
+            </div>
+
+            <div class="about-buttons">
+              <a
+                download=""
+                href="/Assets/Resume.pdf"
+                class="button button-flex"
+              >
+                Download Resume<i
+                  class="fa-solid fa-file-arrow-down button-icon"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills and qualification  -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <span class="section-subtitle">My Technical Skills</span>
+        <div class="skills-content container">
+          <div class="skills-name">Python</div>
+          <div class="skills-name">Sci-Kit Learn</div>
+          <div class="skills-name">Deep Learning</div>
+          <div class="skills-name">Machine Learning</div>
+          <div class="skills-name">NLP</div>
+          <div class="skills-name">Open CV</div>
+          <div class="skills-name">Web Scrapping</div>
+          <div class="skills-name">Django</div>
+          <div class="skills-name">SQL</div>
+          <div class="skills-name">JavaScript</div>
+          <div class="skills-name">React JS</div>
+          <div class="skills-name">Bootstrap</div>
+          <div class="skills-name">Figma</div>
+          <div class="skills-name">Photoshop</div>
+          <div class="skills-name">After Effects</div>
+          <div class="skills-name">Python</div>
+        </div>
+      </section>
+      <section class="qualification section">
+        <h2 class="section-title">Qualification</h2>
+        <span class="section-subtitle">My journey</span>
+
+        <div class="qualification-container container">
+          <div class="qualification-tabs">
+            <div
+              class="qualification-button button-flex qualification-active"
+              data-target="#education"
+            >
+              <i class="fa-solid fa-graduation-cap qualification-icon"></i>
+              Education
+            </div>
+            <div class="qualification-button button-flex" data-target="#work">
+              <i class="fa-solid fa-briefcase qualification-icon"></i>
+              Works
+            </div>
+          </div>
+
+          <div class="qualification-section">
+            <div
+              class="qualification-content qualification-active"
+              data-content
+              id="education"
+            >
+              <!-- qualifi 1 -->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">
+                    Electrical Engineering
+                  </h3>
+                  <span class="qualification-subtitle">IIT Jammu</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021 - 2025
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 2 -->
+
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">
+                    Django Development
+                  </h3>
+                  <span class="qualification-subtitle">Udemy</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2021 - 2022
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 3 -->
+
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Applied Machine Learning</h3>
+                  <span class="qualification-subtitle">World Quant University</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2022 - 2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 4 -->
+
+
+            </div>
+
+            <!-- qualific content 2  -->
+            <div class="qualification-content" data-content id="work">
+              <!-- qualifi 1 -->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Django Developer</h3>
+                  <span class="qualification-subtitle">Freelance</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2022 - Present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!-- qualifi 2 -->
+
+              <div class="qualification-data">
+                <div></div>
+
+                <div>
+                  <span class="qualification-round"></span>
+                  <span class="qualification-line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification-title">Data Scientist</h3>
+                  <span class="qualification-subtitle">Freelancer/Nocturne Ventures</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2022 - Present
+                  </div>
+                </div>
+              </div>
+
+              <!-- qualifi 3 -->
+
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Machine Learning</h3>
+                  <span class="qualification-subtitle">Nucleon</span>
+                  <div class="qualification-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    2022 - 2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-round"></span>
+                  <!-- <span class="qualification-line"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <h2 class="section-title">Services</h2>
+        <span class="section-subtitle">What I offer</span>
+
+        <div class="services-container container grid">
+          <!-- service 1  -->
+          <div class="services-content">
+            <div>
+              <i class="fa-solid fa-code services-icon"></i>
+
+              <h3 class="services-title">
+                Data <br />
+                Scientist
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              View more
+              <i class="fa-solid fa-arrow-right button-icon"></i>
+            </span>
+
+            <div class="services-box">
+              <div class="services-box-content">
+                <h4 class="services-box-title">
+                  Data <br />
+                  Scientist
+                </h4>
+                <i class="fa-solid fa-xmark services-box-close"></i>
+
+                <ul class="services-box-services grid">
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Machine Learning Models</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>NLP</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Open CV</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Data Analysis</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- service 2  -->
+          <div class="services-content">
+            <div>
+              <i class="fa-brands fa-uikit services-icon"></i>
+              <h3 class="services-title">
+                Django <br />
+                Developer
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              View more
+              <i class="fa-solid fa-arrow-right button-icon"></i>
+            </span>
+
+            <div class="services-box">
+              <div class="services-box-content">
+                <h4 class="services-box-title">
+                  Django <br />
+                  Developer
+                </h4>
+                <i class="fa-solid fa-xmark services-box-close"></i>
+
+                <ul class="services-box-services grid">
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>User Authentication</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Responsive Web App</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Database Management</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>AI Models Deployement</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- service 3  -->
+          <div class="services-content">
+            <div>
+              <i class="fa-solid fa-hashtag services-icon"></i>
+              <h3 class="services-title">
+                Graphic<br />
+                Designer
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              View more
+              <i class="fa-solid fa-arrow-right button-icon"></i>
+            </span>
+
+            <div class="services-box">
+              <div class="services-box-content">
+                <h4 class="services-box-title">
+                  Graphic <br />
+                  Designer
+                </h4>
+                <i class="fa-solid fa-xmark services-box-close"></i>
+
+                <ul class="services-box-services grid">
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Engaging Visual Content</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Front End Development</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Brand Videos</p>
+                  </li>
+                  <li class="services-box-list">
+                    <i
+                      class="fa-regular fa-circle-check services-list-icon"
+                    ></i>
+                    <p>Brand Development and Growth</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Projects</h2>
+        <span class="section-subtitle">Most recent work</span>
+
+        <div class="portfolio-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- project1  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/Add a heading (1).png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Pre Production Film Tool</h3>
+                <p class="portfolio-description">
+                  An AI Model which can breakdown script into cast, costumes etc. Also helping Film Makers in many ways during pre-production.
+     
+                </p>
+              
+              </div>
+            </div>
+            <!-- project2  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/Add a heading (5).png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Price Analysis and Predictive Modeling in US</h3>
+                <p class="portfolio-description">
+                  Conducted comprehensive analysis of burrito prices across various US locations to uncover underlying price variations
+factors.
+                </p>
+ 
+              </div>
+            </div>
+            <!-- project3  -->
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/Add a heading (4).png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Machine Tracking Webserver</h3>
+                <p class="portfolio-description">
+                  Designed and designed a webserver for a tracking app for costly machines in our college
+                </p>
+ 
+              </div>
+            </div>
+            <div class="portfolio-content grid swiper-slide">
+              <img src="Assets/Add a heading (6).png" alt="" class="portfolio-img" />
+
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Creative Insight Analyzer</h3>
+                <p class="portfolio-description">
+                  The Creative Insight Analyzer (CIA) is a groundbreaking NLP (Natural Language Processing) project that combines image and word
+analysis to evaluate and quantify an individual's creative thinking abilities.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="swiper-angles">
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-angle-right swiper-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-angle-left swiper-icon"></i>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="project-contact section">
+        <div class="project-bg">
+          <div class="project-container container grid">
+            <div class="project-data">
+              <h2 class="project-title">Do you have a new project?</h2>
+              <p class="project-description">
+                Contact me now and We can make something awesome
+              </p>
+
+            </div>
+            <img src="Assets/Icons/contactme.png" alt="" class="project-img" />
+          </div>
+        </div>
+      </section>
+      <!-- testimonial -->
+
+
+      <!-- contact me  -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact me</h2>
+        <span class="section-subtitle">Get in touch</span>
+
+        <div class="contact-container container grid">
+          <div>
+            <div class="contact-info">
+              <i class="fa-regular fa-envelope contact-icon"></i>
+              <div>
+                <h3 class="contact-title">Email</h3>
+                <a
+                  href="mailto:2021uee0150@iitjammu.ac.in"
+                  target="_blank"
+                  class="contact-subtitle"
+                  >2021uee0150@iitjammu.ac.in</a
+                >
+              </div>
+            </div>
+            <div class="contact-info">
+              <i class="fa-brands fa-linkedin-in contact-icon"></i>
+              <div>
+                <h3 class="contact-title">Linkedin</h3>
+                <a
+                  class="contact-subtitle"
+                  href="https://www.linkedin.com/in/pratham-modi-670138250/"
+                  target="_blank"
+                  >@pratham0039</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-bg">
+          <div class="footer-container container grid">
+            <div>
+              <h1 class="footer-title">Pratham Modi</h1>
+              <span class="footer-subtitle">Data Scientist || Web Developer || Graphic Designer</span>
+            </div>
+            <ul class="footer-links">
+              <li>
+                <a href="#services" class="footer-link">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="footer-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="#contact" class="footer-link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="footer-socials">
+              <a
+                href="https://www.linkedin.com/in/pratham-modi-670138250/"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://github.com/pratham0039"
+                target="_blank"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/pratham._.modi_/"
+                target="_blank"
+                class="footer-social"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <p class="footer-copy">By Pratham Modi</p>
+        </div>
+      </footer>
+    </main>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Set the preloader delay time in milliseconds
+    const preloaderDelay = 3500; // Adjust this value to set the desired delay (in milliseconds)
+
+    // Hide the preloader after the specified delay
+    setTimeout(function () {
+        const preloader = document.querySelector(".preloader");
+        const content = document.querySelector(".content");
+
+        preloader.style.display = "none";
+        content.style.display = "block";
+    }, preloaderDelay);
+});
+
+
+
+    </script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+    integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./app.js"></script>
+
+  <script src="Libraries/swiper-bundle.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/9b634c15bd.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
