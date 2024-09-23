@@ -4,8 +4,6 @@ info:
   description: API that handles incoming webhooks from Chatwoot.
   version: 1.0.0
 servers:
-  # Added by API Auto Mocking Plugin
-  - description: SwaggerHub API Auto Mocking
   - url: https://chatwoot-jwcv.onrender.com
     description: Production server
 paths:
@@ -24,8 +22,16 @@ paths:
                 content:
                   type: string
                   description: The message content sent by the user via Chatwoot
+                conversation:
+                  type: object
+                  description: The conversation details
+                  properties:
+                    id:
+                      type: integer
+                      description: The ID of the conversation
               required:
                 - content
+                - conversation
       responses:
         '200':
           description: Webhook received and processed successfully
