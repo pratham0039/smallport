@@ -43,5 +43,9 @@ paths:
                   status:
                     type: string
                     example: success
+                  content:
+                    type: string
+                    description: The fixed response content from the webhook
+                    example: Lxme trading
         '400':
           description: Invalid request data
