@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: Chatwoot Webhook API
+  description: API that handles incoming webhooks from Chatwoot.
+  version: 1.0.0
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+  - url: https://chatwoot-jwcv.onrender.com
+    description: Production server
+paths:
+  /chatwoot-webhook:
+    post:
+      summary: Handle Chatwoot webhook
+      operationId: handleWebhook
+      requestBody:
+        description: The data sent by Chatwoot in the webhook
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                content:
+                  type: string
+                  description: The message content sent by the user via Chatwoot
+              required:
+                - content
+      responses:
+        '200':
+          description: Webhook received and processed successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+        '400':
+          description: Invalid request data
