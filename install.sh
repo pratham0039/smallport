@@ -339,9 +339,9 @@ function setup_chatwoot() {
   rvm install "ruby-3.3.3"
   rvm use 3.3.3 --default
 
-  git clone https://github.com/pratham0039/lxme-chatbot-Agent.git
+  git clone https://github.com/pratham0039/lxme-chatbot-Agent
   cd chatwoot
-  git checkout "$BRANCH"
+  git checkout main
   bundle
   yarn
 
