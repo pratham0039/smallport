@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin-left: 200px;
+  background: #5d9ab2 url("img_tree.png") no-repeat top left;
+}
+
+.center_div {
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: #d0f0f6;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="center_div">
+  <h1>Our own LXME Fab</h1>
+  </div>
+
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
+        document.head.appendChild(link);
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            var fab = document.createElement("div");
+            fab.innerHTML = '<i class="fas fa-comments"></i>';
+            fab.style.position = "fixed";
+            fab.style.bottom = "4%";
+            fab.style.right = "4%";
+            fab.style.width = "60px";
+            fab.style.height = "60px";
+            fab.style.backgroundColor = "#ff5a5f";
+            fab.style.borderRadius = "50%";
+            fab.style.display = "flex";
+            fab.style.justifyContent = "center";
+            fab.style.alignItems = "center";
+            fab.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.2)";
+            fab.style.color = "white";
+            fab.style.fontSize = "24px";
+            fab.style.textAlign = "center";
+            fab.style.cursor = "pointer";
+            fab.style.zIndex = "1000";
+            fab.onmouseover = function() { fab.style.backgroundColor = "#ff4040"; };
+            fab.onmouseout = function() { fab.style.backgroundColor = "#ff5a5f"; };
+            fab.onclick = toggleIframe;
+            document.body.appendChild(fab);
+    
+            
+            var iframeContainer = document.createElement("div");
+            iframeContainer.style.position = "fixed";
+            iframeContainer.style.bottom = "12%";
+            iframeContainer.style.right = "4%";
+            iframeContainer.style.width = "90%";
+            iframeContainer.style.maxWidth = "750px";
+            iframeContainer.style.height = "70%";
+            iframeContainer.style.maxHeight = "900px";
+            iframeContainer.style.backgroundColor = "white";
+            iframeContainer.style.border = "1px solid #ccc";
+            iframeContainer.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.2)";
+            iframeContainer.style.zIndex = "1000";
+            iframeContainer.style.display = "none";
+            iframeContainer.id = "iframe-container";
+            document.body.appendChild(iframeContainer);
+    
+            
+            var closeButton = document.createElement("div");
+            closeButton.innerHTML = "✖";
+            closeButton.style.position = "absolute";
+            closeButton.style.top = "5px";
+            closeButton.style.right = "10px";
+            closeButton.style.cursor = "pointer";
+            closeButton.style.fontSize = "18px";
+            closeButton.style.color = "#999";
+            closeButton.onclick = toggleIframe;
+            iframeContainer.appendChild(closeButton);
+    
+            var iframe = document.createElement("iframe");
+            iframe.src = "https://lxmev5app-eqvok9rdibigukffcst5qh.streamlit.app/?embedded=true";
+            iframe.style.height = "calc(100% - 30px)";
+            iframe.style.width = "100%";
+            iframe.style.border = "none";
+            iframeContainer.appendChild(iframe);
+    
+            
+            function toggleIframe() {
+                if (iframeContainer.style.display === "none" || iframeContainer.style.display === "") {
+                    iframeContainer.style.display = "block";
+                } else {
+                    iframeContainer.style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
